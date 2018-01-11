@@ -14,3 +14,20 @@
      https://github.com/SerpentAI/SerpentAI
      https://github.com/SerpentAI/SerpentAI/wiki
 
+4    深度学习中文版本阅读
+     https://github.com/exacity/deeplearningbook-chinese/releases
+
+5    
+     大数据自动驾驶 
+     End-to-end Learning of Driving Models from Large-scale Video Datasets
+     https://arxiv.org/abs/1612.01079
+
+6    https://github.com/openai/multiagent-competition
+
+     
+7    Mask R-CNN
+    https://arxiv.org/abs/1703.06870
+
+8    vispy.org
+
+9    https://challenger.ai
