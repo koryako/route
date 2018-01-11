@@ -78,7 +78,7 @@
 
 
 
-
+记忆 注意力 与 语义 
 
 
 1.
@@ -123,9 +123,10 @@
 
      论文《A Differentiable Transition Between Additive and Multiplicative Neurons》对这一概念进行了探索，
      参阅：https://arxiv.org/abs/1604.03736。
-
+     
+     
      另外，《深度|深度学习能力的拓展，GoogleBrain讲解注意力模型和增强RNN》这篇文章也对软注意机制进行了很好的概述。 
-
+     http://www.yidianzixun.com/home?page=article&id=0ERwZLZ6
      软注意最简单的形式在图像方面和向量值特征方面并无不同，还是和上面的（1）式一样。
 
      论文《Show,AttendandTell:NeuralImageCaptionGenerationwithVisualAttention》是最早使用这种类型的注意的研究之一：
@@ -211,7 +212,7 @@ Oxford-102花数据集由102个花的类别组成，每个类别包含40到258�
 20
 
 
-21
+
 
 DeepMind发布的WaveNet的表现相当不错，而且现在还有百度的DeepVoice3，以及最近谷歌开发的Tacotron2： 
 
