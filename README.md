@@ -28,6 +28,9 @@ https://github.com/facebookresearch/Detectron
 https://github.com/jinfagang/keras_frcnn
 
 
+https://arxiv.org/pdf/1506.01497.pdf
+
+
 
 
 
