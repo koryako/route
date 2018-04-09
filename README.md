@@ -31,8 +31,19 @@ https://github.com/jinfagang/keras_frcnn
 https://arxiv.org/pdf/1506.01497.pdf
 
 
+https://blog.csdn.net/u013236946/article/details/73243310
+
+https://github.com/tensorflow/tfjs-core 深度强化学习——连续动作控制DDPG、NAF
+
+https://github.com/yanpanlau/DDPG-Keras-Torcs
+
+https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/6-3-A1-A3C/
 
 
+https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG.py
+https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/9_Deep_Deterministic_Policy_Gradient_DDPG/DDPG_update.py
+
+https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/experiments/Robot_arm
 
 
 
