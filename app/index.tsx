@@ -31,4 +31,4 @@ class MyClass extends React.Component<any, any> {
  
 
 
-//webpack-dev-server --inline --config build/webpack.config.js --content-base build --open
+//npm run dev
