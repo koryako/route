@@ -1,6 +1,33 @@
 
 神经网络的可解释性
 
+
+carla conditional imitation learning
+
+
+https://arxiv.org/pdf/1707.08475 
+
+制定源域 和目标域
+Ds   Dt
+
+每个域中都符合马尔可夫
+
+Ds=(Ss,As,Ts,Rs)
+Dt=(St,At,Tt,Rt)
+假设折扣因数是一样的 r
+
+T 为 transition function 中文暂时翻译成 转换函数
+
+当前行为空间被分享，且转换函数和反馈函数差不多的情况下，两个域中的状态是不一致的
+
+1[医疗]1.探究卷积神经网络中的冗余性，并介绍如何通过改进网络结构减少冗余计算量； 2.通过引入动态预测方法，提升网络的推理效率； 3.介绍一种新的剪枝方法及卷积结构，训练面向移动端的轻量卷积网络；
+
+2[医疗]LIME：Local Interpretable Model-Agnostic Explanations 更广为所知的名称是 LIME，它是一个涉及以多种方式操作数据变量以查看什么把分值提高的最多的技术。在 LIME 中，局部指的是局部保真度，即解释应该反映分类器在被预测实例「周围」的行为。这一解释是无用的除非它是可阐释的——也就是说，除非人可以理解它。Lime 可以解释任何模型而无需深入它，因此它是模型不可知论的。 DARPA 的可解释性 AI（Explainable AI）：现在，DARPA 创建了一套机器学习技术来产生更可解释的模型，同时维持一个高水平的学习表现。可解释性 AI 可以使人类用户理解和管理即将到来的 AI 伙伴，其核心优势是新技术可以潜在地回避掉对额外层的需求。另一个解释组件可以从训练神经网络关联带有隐藏层节点的语义属性——这可以促进对可解释功能的学习。
+
+疗]完全不写代码： Neural Turing Machines Neural Symbolic Machines/Neural Programmer DeepCoder: Learning to Write Programs 程序员给出少量代码，用神经网络拟合得到中间缺失的函数： Programming with a Differentiable Forth Interpreter Differentiable Programs with Neural Libraries 相关工作--如何利用人工写的程序来提高神经网络『写代码』的能力： Coupling Distributed and Symbolic Execution for Natural Language Queries
+
+
+
 https://arxiv.org/pdf/1707.08475 使用增强学习进行域迁移
 
 https://github.com/hankcs/multi-criteria-cws  简单有效的多标准中文分词
