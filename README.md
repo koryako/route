@@ -3,7 +3,7 @@
 
 
 carla conditional imitation learning
-
+http://www.sohu.com/a/162831043_473283  论文ICML2017
 
 https://arxiv.org/pdf/1707.08475 
 
@@ -26,7 +26,7 @@ T 为 transition function 中文暂时翻译成 转换函数
 
 疗]完全不写代码： Neural Turing Machines Neural Symbolic Machines/Neural Programmer DeepCoder: Learning to Write Programs 程序员给出少量代码，用神经网络拟合得到中间缺失的函数： Programming with a Differentiable Forth Interpreter Differentiable Programs with Neural Libraries 相关工作--如何利用人工写的程序来提高神经网络『写代码』的能力： Coupling Distributed and Symbolic Execution for Natural Language Queries
 
-
+https://github.com/lzrobots/DeepEmbeddingModel_ZSL
 
 https://arxiv.org/pdf/1707.08475 使用增强学习进行域迁移
 
