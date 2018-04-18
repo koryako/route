@@ -23,10 +23,8 @@ http://www.sohu.com/a/162831043_473283
 迁移学习-------------
 
 情形1：目标数据集很小，目标任务与源任务相似：这种情况使用特征提取，因为目标数据集小容易造成过拟合。 
-
 情形2：目标数据集很小，目标任务与源任务不同：这时我们微调底层网络，并移除高层网络。换句话说，我们使用较早的特征提取。 
 情形3：目标数据集很大，目标任务与源任务相似：我们有了大量的数据，我们可以随机初始化参数，从头开始训练网络。然而，最好还是使用预训练的网络初始化参数并微调几层。 
-
 情形4：目标数据集很大，目标任务与源任务不同。这时，我们微调大部分层甚至整个网络
 
 https://arxiv.org/pdf/1707.08475 论文：使用增强学习来提高0样本的迁移学习
@@ -57,6 +55,7 @@ https://github.com/lzrobots/DeepEmbeddingModel_ZSL
 
 
 自己驾驶模拟器-----
+https://github.com/18605973470/rl-with-carla/
 https://github.com/kvasnyj/carla 用ros 控制carla
 
 carla conditional imitation learning
@@ -80,9 +79,13 @@ https://github.com/tensorflow/tpu/blob/master/models/official/retinanet/retinane
 http://blog.csdn.net/qq_34564947/article/details/77200104
 https://arxiv.org/pdf/1708.02002.pdf
 
+感知融合-----------
+
+https://github.com/martinruenz/co-fusion  多目标融合
+
 智能模拟-----------
 
-
+https://pathak22.github.io/noreward-rl/  好奇心
 https://github.com/MultiAgentLearning/playground 基于炸弹人游戏的多代理的ai研究环境
 
 https://blog.csdn.net/u013236946/article/details/73243310 深度强化学习——连续动作控制DDPG、NAF
