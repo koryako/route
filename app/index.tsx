@@ -6,7 +6,7 @@ import './app.css'
 class MyClass extends React.Component<any, any> {
     constructor(props){
         super(props)
-        this.state={liked:false}
+        this.state={liked:false,text:''}
         this.pclic=this.pclic.bind(this)
     }
 
@@ -15,11 +15,21 @@ class MyClass extends React.Component<any, any> {
        this.setState({liked:!this.state.liked});      
       
        console.log(this.state.liked);
+       
+       if (this.state.licked){
+           console.log(this.state.licked)
+           this.setState({text:'喜欢'});
+       }else{
+        this.setState({text:'不喜欢'});
+
+       }
+       console.log(this.state.text);
+       
     }
     
     render() {
-        let text=this.state.licked? "不喜欢":"喜欢";
-        return <div><button onClick={this.pclic}>hello {this.props.name}</button>{text}</div>;  
+        
+        return <div className="name"><button onClick={this.pclic}>hello {this.props.name}</button>{this.state.text}</div>;  
     }
 }
   

@@ -55,7 +55,7 @@ class Layer(object):
     def update(self,alpha=0.1):
         self.weights -= self.input.T.dot(self.weight_output_delta) * alpha
 
-
+np.random.seed(1)
 num_examples=1000
 output_dim=12
 iterations=1000
@@ -155,7 +155,7 @@ class DNI(object):
         grad = true_gradient * self.nonlin_deriv(self.output)
         
         self.weights -= self.input.T.dot(grad) * self.alpha
-        self.bias -= np.average(grad,axis=0) * self.alpha
+       
         
         return grad.dot(self.weights.T)
         
@@ -172,6 +172,7 @@ start=time.time()
 for iter in range(iterations):
     
     error = 0
+    synthetic_error=0
     for batch_i in range(int(len(x) / batch_size)):
         batch_x = x[(batch_i * batch_size):(batch_i+1)*batch_size]
 
@@ -183,11 +184,20 @@ for iter in range(iterations):
         layer_2_D,layer_2_out = layer_2.forward_and_synthetic_update(layer_1_out)
         layer_3_D,layer_3_out = layer_3.forward_and_synthetic_update(layer_2_out)
         
-        layer_3.update_synthetic_weights(layer_3_D)
-        layer_2.update_synthetic_weights(layer_2_D)
-        layer_1.update_synthetic_weights(layer_1_D)       
-    
         
+        
+        layer_3_delta = layer_3_out - batch_y
+        layer_2_delta = layer_3.normal_update(layer_3_delta)
+        
+        layer_2.update_synthetic_weights(layer_2_delta)
+        layer_1.update_synthetic_weights(layer_1_out)       
+    
+        error += (np.sum(np.abs(layer_3_delta)))
+        synthetic_error += (np.sum(np.abs(layer_2_delta - layer_2.synthetic_gradient)))
+    if(iter % 100 == 99):
+        sys.stdout.write("\rIter:" + str(iter) + " endLoss:" + str(error) + " Loss:" + str(np.abs(layer_3_delta)) + " Synthetic Loss:" + str(synthetic_error))
+    if(iter % 10000 == 9999):
+        print("")  
        
         
 
